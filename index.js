@@ -170,7 +170,16 @@ function appleIndex(fruits) {
  * the returned value should be: [ false, true, false, false, true, false ].
 */
 function isItAnApple(strings) {
-
+  let newStrings = [];
+  for(let i = 0; i < strings.length; i++) {
+    if(strings[i] === "apple") {
+      newStrings.push("true");
+    } else {
+      newStrings.push("false");
+    }
+  }
+  // console.log(newStrings);
+  return newStrings;
 }
 
 
