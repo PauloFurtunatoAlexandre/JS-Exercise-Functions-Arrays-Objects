@@ -169,14 +169,14 @@ function appleIndex(fruits) {
 */
 function isItAnApple(fruits) {
     let newFruits = [];
-    for(let i = 0; i < fruits.length; i++) {
-      if(fruits[i] === "apple") {
+    
+    fruits.map((item) => {
+      if(item === 'apple') {
         newFruits.push(true);
       } else {
         newFruits.push(false);
       }
-    }
-
+    });
     return newFruits;
 }
 
